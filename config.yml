@@ -1,0 +1,10 @@
+shortUrlGenerate:
+  len: 10
+  chars: "qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM1234567890_"
+
+database:
+  host: "127.0.0.1"
+  port: "5432"
+  username: "postgres"
+  password: "docker"
+  databaseName: "postgres"
