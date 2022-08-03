@@ -1,7 +1,12 @@
 FROM golang:latest
+WORKDIR /app
 
-ENV GOPATH=/
-COPY ./ ./
+COPY go.mod ./
+COPY . .
+COPY server ./
 
-RUN go mod download
-RUN go build -o app ./server/server.go
+EXPOSE 9000:9000
+
+RUN go build main.go
+
+CMD ["./main"]
