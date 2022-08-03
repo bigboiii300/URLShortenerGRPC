@@ -24,6 +24,7 @@ func main() {
 	if err != nil {
 		log.Fatal(errViper)
 	}
+
 	switch *mode {
 	case "postgres":
 		pb.RegisterURLShortenerServer(s, postgresDatabase)
