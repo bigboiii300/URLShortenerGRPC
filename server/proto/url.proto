@@ -3,7 +3,7 @@ option go_package = "./";
 package api;
 
 service URLShortener {
-  rpc Get(URLResponse) returns (URLRequest) {}
+  rpc Get (URLResponse) returns (URLRequest) {}
   rpc Create (URLRequest) returns (URLResponse) {}
 }
 
